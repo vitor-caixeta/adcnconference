@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Thunder;
+  src: url(FONT/Thunder-VF.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+.bg-ofc{
+  background-color: #141414;
+}
+
+.mont-title{
+  font-family: 'Montserrat ExtraBold', sans-serif;
+}
+
+.mont-text
+{
+  font-family: 'Montserrat SemiBold', sans-serif;
+}
+
+.mont-reg{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.back-gradient{
+  background: linear-gradient(to right,#ed02fe, #0902ff);
+  background-size: 105%, 105%;
+}
+
+.zoom{
+  transition: transform 0.3s;
+}
+
+.zoom:hover{
+  transform: scale(1.1);
+}
+
+.backimagelg{
+  background-image: url(fotos-site/pastor-site-lg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.backimagemd{
+  background-image: url(fotos-site/pastor-site-md.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.text-gradient{
+  background-image: linear-gradient(to right,#ed02fe, #0902ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.link {
+  color: #ed02fe;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.link:hover {
+  border-color: #ed02fe;
+}
+
+/*ANIMAÇÕES INTEGRADAS COM JS*/
+
+.hidden{
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transition: all 1s;
+}
